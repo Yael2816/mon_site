@@ -3,16 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mon site</title>
-  <style>
-    body { font-family: sans-serif; max-width: 600px; margin: 0 auto; padding: 1.5rem; line-height: 1.6; }
-    h1 { color: #4a6cf7; }
-    a.btn { display: inline-block; padding: .6rem 1rem; background: #4a6cf7; color: #fff; border-radius: 8px; text-decoration: none; }
-  </style>
+  <title>Portfolio — Yael</title>
+  <link rel="stylesheet" href="/assets/style.css">
+  <meta name="description" content="Portfolio de Yael — projets, compétences et contact.">
 </head>
 <body>
-  <h1>Bienvenue 👋</h1>
-  <p>Ceci est mon premier site hébergé sur GitHub.</p>
-  <a class="btn" href="mailto:moi@exemple.com">Me contacter</a>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Yael — Portfolio</h1>
+      <nav>
+        <a href="#about">À propos</a>
+        <a href="#projects">Projets</a>
+        <a href="#skills">Compétences</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="hero" class="hero">
+      <h2>Bonjour 👋 Je suis Yael</h2>
+      <p>Développeuse / Étudiante — je crée des sites web simples, accessibles et performants.</p>
+      <p><a class="btn" href="#projects">Voir mes projets</a></p>
+    </section>
+
+    <section id="about">
+      <h2>À propos</h2>
+      <p>Bienvenue sur mon portfolio. Ici vous trouverez des exemples de projets, mes compétences techniques et un moyen de me contacter.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projets</h2>
+      <div class="grid">
+        <article class="card">
+          <h3><a href="/projects/project1/">Projet exemple</a></h3>
+          <p>Petite description du projet — site statique créé avec HTML/CSS. Cliquez pour en savoir plus.</p>
+        </article>
+        <!-- Ajoutez d'autres cartes de projet ici -->
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Compétences</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Responsive design & accessibilité</li>
+        <li>Git & GitHub (Pages, Actions)</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Pour me contacter : <a href="mailto:moi@exemple.com">moi@exemple.com</a></p>
+      <p>Ou <a href="https://github.com/Yael2816" target="_blank" rel="noopener">voir mon GitHub</a>.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© Yael — <a href="https://github.com/Yael2816/mon_site">Source</a></div>
+  </footer>
 </body>
 </html>
